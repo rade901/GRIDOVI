@@ -1,0 +1,100 @@
+body {
+    margin: 0;
+    background-color: rgb(255, 0, 0);
+}
+
+.container {
+    display: grid;
+    height: 200vh;
+    grid-template-columns: 0.5fr 2fr 2fr 2fr;
+    grid-template-rows: 0.6fr 1.4fr 1.2fr 2.5fr 3fr 1fr 1fr 2.5fr 0.5fr;
+    grid-template-areas: "nav nav nav nav" "sidebar section section section" "sidebar content1 content2 content3" "sidebar content1 content2 content3" "sidebar content4 content5 content6" "sidebar content4 content5 content6" "sidebar content7 content8 content9" "sidebar content7 content8 content9" "footer footer footer footer";
+    grid-gap: 0.1rem;
+}
+
+@media only screen and (max-width:550px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas: "nav" "sidebar" "section" "content1" "content2" "content3" "content4" "content5" "content6" "content7" "content8" "content9" "footer";
+    }
+}
+
+nav {
+    background-color: rgb(0, 0, 0);
+    grid-area: nav;
+    text-align: center;
+    color: gold;
+}
+
+section {
+    background-color: rgb(0, 0, 0);
+    grid-area: section;
+    color: goldenrod;
+}
+
+#sidebar {
+    background-color: black;
+    color: goldenrod;
+    grid-area: sidebar;
+}
+
+#content1 {
+    background-color: rgb(0, 0, 0);
+    grid-area: content1;
+    color: goldenrod;
+}
+
+#content2 {
+    background-color: rgb(0, 0, 0);
+    grid-area: content2;
+    color: goldenrod;
+}
+
+#content3 {
+    background-color: rgb(0, 0, 0);
+    grid-area: content3;
+    color: goldenrod;
+}
+
+#content4 {
+    background-color: rgb(0, 0, 0);
+    grid-area: content4;
+    color: goldenrod;
+}
+
+#content5 {
+    background-color: rgb(0, 0, 0);
+    grid-area: content5;
+    color: goldenrod;
+}
+
+#content6 {
+    background-color: rgb(0, 0, 0);
+    grid-area: content6;
+    color: goldenrod;
+}
+
+#content7 {
+    background-color: rgb(0, 0, 0);
+    grid-area: content7;
+    color: goldenrod;
+}
+
+#content8 {
+    background-color: rgb(0, 0, 0);
+    grid-area: content8;
+    color: goldenrod;
+}
+
+#content9 {
+    background-color: rgb(0, 0, 0);
+    grid-area: content9;
+    color: goldenrod;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    grid-area: footer;
+    color: goldenrod;
+}
